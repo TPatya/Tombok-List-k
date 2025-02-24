@@ -46,6 +46,36 @@ public class TombokListák {
        int eredmeny = szam[0] + szam[1] + szam[2];
        
         System.out.println(eredmeny);
+        
+        String[] szavak = new String[3];
+        
+        szavak[0] = "alma";
+        szavak[1] = "körte";
+        szavak[2] = "eper";
+        
+        String[] szavak2 = {"alma", "körte", "eper"};
+        
+        //2D
+        
+        int[][] matrix = new int[3][3];  //[sor][oszlop] 3*3
+        
+        int[][] matrix2 = {
+            {1,2,3},
+            {4,5,6},
+            {7,8,9}
+        };
+        
+        int sor = matrix2.length;
+        
+        int oszlop = matrix2[0].length;
+        
+        String[][] termekek = {
+            {"Kenyér", "1000 Ft"},
+            {"Tej", "520 Ft"},
+            {"Parizer", "600 Ft"}
+        };
+        System.out.println("Termék neve: " + termekek[1][0] + "-" + termekek[1][1]);      
+                
     } 
     
 }
