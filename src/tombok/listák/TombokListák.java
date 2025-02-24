@@ -31,6 +31,21 @@ public class TombokListák {
         System.out.println(asd);
         
         System.out.println(szamok.length);
-    }   
+        
+        String szo = "Almafa";
+        
+        char[] szo_bontva = new char[6];
+        szo_bontva = szo.toCharArray();
+        
+        int[] szam = new int[3];
+        
+       szam[0] = 3;
+       szam[1] = 2;
+       szam[2] = 9;
+       
+       int eredmeny = szam[0] + szam[1] + szam[2];
+       
+        System.out.println(eredmeny);
+    } 
     
 }
