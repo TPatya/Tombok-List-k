@@ -4,6 +4,9 @@
  */
 package tombok.listák;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author patri
@@ -74,7 +77,43 @@ public class TombokListák {
             {"Tej", "520 Ft"},
             {"Parizer", "600 Ft"}
         };
-        System.out.println("Termék neve: " + termekek[1][0] + "-" + termekek[1][1]);      
+        System.out.println("Termék neve: " + termekek[1][0] + "-" + termekek[1][1]);    
+        
+        
+        List<Integer> szamlista = new ArrayList<>();
+        
+        szamlista.add(10);
+        szamlista.add(4);
+        
+        int listameret = szamlista.size();
+        System.out.println(listameret);
+        
+        int kivalasztott = szamlista.get(0);
+        System.out.println(kivalasztott);
+        
+        //szamlista.remove(1); //4 est tőrli
+        
+        szamlista.set(1,9);
+        
+        int index = szamlista.indexOf(10);
+        
+        boolean tartalmaz = szamlista.contains(10);
+        System.out.println(tartalmaz);
+        
+        boolean ures = szamlista.isEmpty();
+        
+        szamlista.clear(); //üres lista
+        
+        List<String> Nevek = new ArrayList<>();
+        Nevek.add("Zoltán");
+        Nevek.add("Emese");
+        Nevek.add("Gábor");
+        
+        System.out.println("A lista 2. Eleme: " + Nevek.get(1));
+        
+        Nevek.add("Mário");
+        
+        System.out.println(Nevek.size());
                 
     } 
     
